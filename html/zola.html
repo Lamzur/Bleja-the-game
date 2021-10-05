@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/x-icon" href="icon.ico">
+		<script src="js_stuff/buttons.js"></script>
+		<title>Zola</title>
+		<style>
+			.hidden{
+				display: none;
+			}
+
+			.show{
+				display: flex;
+				justify-content: center;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header_sidepages">
+			<h1>Lazar Dedic</h1>
+		</div>
+		<div class="back">
+			<a href="team.html">
+				<button id="back_buttonteam">BACK</button>
+			</a>
+		</div>
+		<div class="content">
+			<p>
+				Main and ONLY designer on the game. He is the one coding this site so you don't have to believe
+				everything that is said about him here. Doesn't code so good but copes with that by drawing and 
+				designing like a hipster with no job. Usually gets the job done but when he doesn't work on the 
+				game for a week, he forgets almost everything.
+			</p>
+			<div class="header_sidepages">
+				<h2>More about me!</h2>
+			</div>
+			<div class="js_buttons">
+				<button class="team_buttons" onclick="showInfo()">Info</button>
+			</div>
+			<div>
+				<p id="info"></p>
+				<p id="single" class="hidden">Yes, I am single you can stop clicking, instagram: @notlamzur</p>
+			</div>
+	</body>
+</html>

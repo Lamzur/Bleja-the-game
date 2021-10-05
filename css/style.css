@@ -1,0 +1,206 @@
+body, html, div, img{
+	margin: 0;
+	background-color:  #fff2e6;
+	padding: 0;
+	overflow-x: hidden; /*Kako ne bi prelazilo granicu windowa na webpage-u*/
+}
+
+h1, h2{
+	padding: 15px;
+	overflow-x: hidden;
+	margin: 0;
+	background-color:  #fff2e6;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/*Poseban header za sve stranice koje nisu index*/
+.header_sidepages{
+	display: flex;
+	justify-content: center;
+	height: 20%;
+	text-align: center;
+}
+
+.header_sidepages h1{
+	font-family: Helvetica, Arial;
+	font-size: 54px;
+	display: inline;
+	text-decoration: 
+}
+
+.back{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	/*nije radilo 0 auto iz nekog razloga*/ 
+}
+
+a:hover{
+	color: #f6b93b;
+	transition: all 0.4s ease 0s;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	height: 20%;
+	text-align: center;
+}
+
+.header h1{
+	font-family: Helvetica, Arial;
+	font-size: 54px;
+	display: inline;
+	text-decoration: 
+}
+
+.blackhover{
+	text-decoration: none;
+	color: #f6b93b;
+}
+
+.blackhover:hover{
+	color: black;
+	transition: all 0.4s ease 0s;
+}
+
+.content{
+	text-align: justify;
+	font-family: Helvetica, Arial;
+	font-size: 23px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 0 200px;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	color: #f6b93b;
+}
+li{
+	margin: 10px 0;
+}
+
+.footer{
+	position: absolute;
+	background-color: black;
+	color: white;
+	width: 100%;
+	min-height: 7%;
+	font-family: Helvetica, Arial;
+	font-weight: bold;
+	text-align: left;
+	font-size: 18px;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.text_1{
+	margin-left: 15px;
+	background-color: black;
+}
+
+.text_2{
+	margin-right: 15px;
+	background-color: black;
+}
+
+.text_1 span{
+	margin: auto;
+}
+
+.text_2 span{
+	margin: auto;
+}
+
+#td{
+	float: right;
+	margin-right: 55px;
+}
+/* did not work
+.overview_title{
+	  position: absolute;
+	  background: linear-gradient(to bottom right,  #ff8533 50%, #fff2e6 50%);
+	  height: 300px;
+	  width: 90%;
+	  overflow: hidden;
+	  z-index: -1;
+	  animation: backmove 5s ease 0s;
+}
+@keyframes backmove{
+	from{top: -400px;}
+	to{top: 0px;}
+}
+*/
+#back_buttonteam{		
+	font-family: Helvetica, Arial;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	background: white;
+	padding: 7px;
+	border: 4px solid black;
+	display: inline-block;
+}
+		
+#back_buttonteam:hover{
+	color: white;
+	background: #f6b93b;
+	border-color: #f6b93b;
+	transition: all 0.4s ease 0s;
+}
+
+.js_buttons, #info{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.team_buttons{
+	font-family: Helvetica, Arial;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	background: white;
+	padding: 7px;
+	border: 4px solid black;
+	display: inline-block;
+}
+
+.team_buttons:hover{
+	color: white;
+	background: #f6b93b;
+	border-color: #f6b93b;
+	transition: all 0.4s ease 0s;
+}
+
+.cup{
+	content:url("coffee.png"); /* Ovo je jedina linija koda koju sam iskoristio sa interneta, nikako nisam mogao napraviti nesto slicno.*/
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+
+#animacija{
+	pointer-events: none; /*Ne moze se nikako interaktovati sa elementom*/
+	z-index: 1;
+	overflow: hidden;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 100%;
+}
+
+#animacija img{
+	position: absolute;
+	width: 70px;
+}

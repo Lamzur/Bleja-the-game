@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/x-icon" href="icon.ico">
+		<title>Dudu</title>
+		<style>
+
+			#secret{
+				display: flex;
+				justify-content: center;
+				width: 100%;
+			}
+
+			.sakrivena{
+				display: none;
+			}
+
+			#pass_button, .prikazana{
+				display: flex;
+				justify-content: center;
+				width: 100%;
+			}
+		</style>
+		<script>
+			var br = 0;
+			function klasa(){
+				var promena = document.getElementById("css_menjanje");
+				if(br == 0){
+					promena.classList.remove('sakrivena');
+					promena.classList.add('prikazana');
+					br++;
+				}
+				else if(br == 1){
+					promena.innerHTML='But that does not matter at all.';
+					br++;
+				}
+				else if(br == 2){
+					promena.innerHTML='We all became fat slobs.';
+					br++;
+				}
+				else{
+					promena.innerHTML='#dontdegradethemjointhem';
+				}
+			}
+
+			function resetuj(){
+				var promena = document.getElementById("css_menjanje");
+				promena.classList.add('sakrivena');
+				promena.classList.remove('prikazana');
+
+			}
+		</script>
+	</head>
+	<body onload="resetuj()">
+		<div class="header_sidepages">
+			<h1>Dejan Dudukovic</h1>
+		</div>
+		<div class="back">
+			<a href="team.html">
+				<button id="back_buttonteam">BACK</button>
+			</a>
+		</div>
+		<div class="content">
+			<img src="">
+			<p>
+				As smart as he is, he is equally short tempered. Gets easily agitated over mistakes other members make.
+				Not a bad thing though, he pushes the team that way and does his part of the job. He is one of the
+				lead programmers and developers, filled with good ideas and suggestions. While he is good at
+				writing code, he lacks in ability to draw, but always adds to the overall design.
+			</p>
+			<p id="secret" 
+			onclick="this.innerHTML='Correction, he does not always add to overal design... :)';"
+			>This will blow your mind (click me).</p>
+			<button id="pass_button" class="team_buttons" onclick="klasa()">This is just to pass the assignment, click me to help me do that. I hope it works</button>
+			<p id="css_menjanje" class="sakrivena">Dejan also weighs the most.</p>
+		</div>
+	</body>
+</html>

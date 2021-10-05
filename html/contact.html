@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="contact_css.css">
+		<link rel="icon" type="image/x-icon" href="icon.ico">
+		<script src="js_stuff/contact.js"></script>
+		<title>Contact us!</title>
+	</head>
+	<body onload="start()">
+		<div class="header_sidepages">
+			<h1>Contact us!</h1>
+		</div>
+		<div class="back">
+			<a href="index.html">
+				<button id="back_button4">BACK</button>
+			</a>
+		</div>
+		<div class="content">
+			<p>Fill in the fields below so we can know who you are and what are you looking for.</p>
+			<form name="form" action="contact_right.html" onsubmit=" return checkForm()">
+				<fieldset>
+					<legend>
+						Your name:
+					</legend>
+					<label for="ime">First name:</label><br>
+					<input type="text" id="ime" name="ime"  required><br>
+					<label for="prezime">Last name:</label><br>
+					<input type="text" id="prezime" name="prezime" required><br>
+					<label for="mail">E-mail:</label><br>
+					<input type="text" id="mail" name="mail"><br>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>
+						What would you want to ask us?
+					</legend>
+					<textarea name="text" rows="10" cols="120" id="com">Insert your comment here.</textarea><br><br>
+					<!--Promenio sam broj kolona posto sam primetio za gresku da prelazi tek nakon sto sam poslao
+						css fajl iz nekog razloga, a kada sam gledao nije bilo tako.-->
+				</fieldset>
+
+				<div id="submitt">
+					<input type="submit" value="Send">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
